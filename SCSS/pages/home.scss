@@ -197,6 +197,7 @@ a.my-email {
 .imgProject {
   width: 26.2rem;
   height: 19.7rem;
+  //position: relative;
   }
 .border-for-img {
   border: 0.1rem solid $grayShade;
@@ -218,8 +219,11 @@ a.my-email {
   display: block;
   position: absolute;
   top: 0;
+  //left: inherit;
   }
-
+.orange-hover {
+  display: none;
+}
 .orange-hover-parent:hover .orange-hover{
   display: block;
 }
@@ -231,6 +235,7 @@ a.my-email {
 
 .footerBackground {
   background: $darkDarkGray;
+  opacity: 0.9;
 }
 .imgFooter {
   margin-right: 3rem;
@@ -262,14 +267,43 @@ a.my-email {
     padding-right: 5%;
   }
 }
-.form-size {
-  width: 30rem;
-}
+
 .contact-text {
-  padding-left: 20%;
+  //padding-left: 10%;
+  padding-bottom: 4rem;
 }
 .style-btn-small {
   padding-left: 5rem;
   padding-right: 5rem;
   margin-top: 4rem;
+
+  @media (max-width: $screen-sm) {
+    text-align: center;
+      }
+}
+.cross-modal-window {
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-family: Merriweather;
+  padding-bottom: 3rem;
+
+  @media (max-width: $screen-sm) {
+    font-size: 2rem;
+  }
+
+}
+.width-icon {
+  width: 28%;
+}
+#myModal {
+  background: rgba(37, 31, 24, 0.86);
+}
+.col-centered-custom {
+    @media (max-width: $screen-xs) {
+    float: none;
+    display: block;
+    margin: 0 auto;
+
+  }
+
 }

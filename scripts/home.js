@@ -16,13 +16,10 @@ $(document).ready(function () {
             $(".hamburger-menu").show();
         });
     });
-
-    // $(".border-for-img").hover(
-    //     function() {
-    //         $(this).closest(".ttt").find(".orange-hover").show();
-    //     },
-    // function() {
-    //     $(".orange-hover").hide();
-    // }
-    // );
+    $(".contact-me").click(function () {
+        $("#myModal").fadeToggle('fast');
+    });
+    $(".width-icon").click(function () {
+        $("#myModal").fadeToggle('fast');
+    });
 });
